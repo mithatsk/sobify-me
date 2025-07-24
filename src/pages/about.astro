@@ -1,62 +1,512 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, APP_NAME } from '../consts';
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage="/blog-placeholder-about.jpg"
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`About - ${SITE_TITLE}`} description={`Learn about ${APP_NAME}'s mission to support people in their sobriety journey through technology, community, and compassion.`} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="about-hero">
+				<h1>About {APP_NAME}</h1>
+				<p class="hero-subtitle">Empowering sobriety through technology, community, and compassion</p>
+			</section>
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+			<section class="mission-section">
+				<div class="content-wrapper">
+					<div class="mission-content">
+						<h2>Our Mission</h2>
+						<p>
+							{APP_NAME} was born from a simple yet powerful belief: everyone deserves support, encouragement, 
+							and the tools they need to build and maintain a sober life. We understand that the path to sobriety 
+							is unique for each person, filled with both challenges and victories that deserve to be acknowledged 
+							and celebrated.
+						</p>
+						<p>
+							Our mission is to create a safe, supportive digital space where people can track their progress, 
+							connect with others who understand their journey, and access the resources they need to thrive 
+							in recovery.
+						</p>
+					</div>
+					<div class="mission-visual">
+						<div class="visual-element">🌟</div>
+					</div>
+				</div>
+			</section>
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+			<section class="story-section">
+				<h2>Our Story</h2>
+				<div class="story-timeline">
+					<div class="timeline-item">
+						<div class="timeline-icon">💡</div>
+						<div class="timeline-content">
+							<h3>The Idea</h3>
+							<p>
+								{APP_NAME} started as a personal project by people in recovery who recognized the need for 
+								better digital tools to support sobriety. Existing apps were either too clinical, too 
+								simplistic, or didn't address the real community and emotional support needs of people 
+								in recovery.
+							</p>
+						</div>
+					</div>
+					<div class="timeline-item">
+						<div class="timeline-icon">👥</div>
+						<div class="timeline-content">
+							<h3>Community Input</h3>
+							<p>
+								We spent months talking to people in recovery, support group leaders, counselors, and 
+								families affected by addiction. Their insights shaped every feature, every design choice, 
+								and every word in our app.
+							</p>
+						</div>
+					</div>
+					<div class="timeline-item">
+						<div class="timeline-icon">🚀</div>
+						<div class="timeline-content">
+							<h3>Coming Soon</h3>
+							<p>
+								{APP_NAME} is launching soon on iOS and macOS, bringing our vision of comprehensive sobriety 
+								support to iPhone, iPad, and Mac users. We're excited to start supporting people in their 
+								recovery journey with native apps designed specifically for Apple's platforms.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+			<section class="values-section">
+				<h2>Our Values</h2>
+				<div class="values-grid">
+					<div class="value-item">
+						<div class="value-icon">🤝</div>
+						<h3>Community First</h3>
+						<p>Recovery thrives in community. We prioritize creating connections and fostering mutual support among our users.</p>
+					</div>
+					<div class="value-item">
+						<div class="value-icon">🔒</div>
+						<h3>Privacy & Safety</h3>
+						<p>Your recovery journey is personal. We protect your privacy and create safe spaces for vulnerability and growth.</p>
+					</div>
+					<div class="value-item">
+						<div class="value-icon">🌱</div>
+						<h3>Growth & Resilience</h3>
+						<p>We celebrate progress over perfection, understanding that recovery is a journey with ups and downs.</p>
+					</div>
+					<div class="value-item">
+						<div class="value-icon">💜</div>
+						<h3>Compassion</h3>
+						<p>We approach every interaction with empathy, understanding, and non-judgmental support.</p>
+					</div>
+					<div class="value-item">
+						<div class="value-icon">🔬</div>
+						<h3>Evidence-Based</h3>
+						<p>Our features are grounded in research and best practices from addiction recovery and mental health fields.</p>
+					</div>
+					<div class="value-item">
+						<div class="value-icon">🎯</div>
+						<h3>Accessibility</h3>
+						<p>Recovery support should be available to everyone, regardless of background, location, or financial situation.</p>
+					</div>
+				</div>
+			</section>
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+			<section class="team-section">
+				<h2>Our Approach</h2>
+				<div class="approach-content">
+					<p>
+						{APP_NAME} isn't just another app—it's a comprehensive support system designed by people who understand 
+						recovery from the inside out. Our team includes individuals in recovery, mental health professionals, 
+						technology experts, and community organizers.
+					</p>
+					<p>
+						We believe in the power of technology to connect, support, and empower, but we never lose sight of the 
+						human element that makes recovery possible. Every feature we build, every interaction we design, and 
+						every word we write is crafted with care and intention.
+					</p>
+				</div>
+			</section>
+
+			<section class="platform-section">
+				<h2>Native iOS & macOS Experience</h2>
+				<div class="platform-content">
+					<p>
+						{APP_NAME} is built specifically for Apple's ecosystem, taking full advantage of the power 
+						and elegance of iOS and macOS. Our native apps provide seamless synchronization across 
+						all your Apple devices through iCloud.
+					</p>
+					<div class="platform-features">
+						<div class="platform-feature">
+							<div class="feature-icon">📱</div>
+							<h3>iPhone & iPad</h3>
+							<p>Track your progress, connect with community, and access support tools wherever you are.</p>
+						</div>
+						<div class="platform-feature">
+							<div class="feature-icon">💻</div>
+							<h3>Mac</h3>
+							<p>Full-featured desktop experience with advanced analytics and comprehensive journaling.</p>
+						</div>
+						<div class="platform-feature">
+							<div class="feature-icon">☁️</div>
+							<h3>iCloud Sync</h3>
+							<p>Your data stays in sync across all devices, private and secure in your iCloud account.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cta-section">
+				<h2>Be Among the First</h2>
+				<p>
+					{APP_NAME} is launching soon on the App Store. Be among the first to experience comprehensive 
+					sobriety support designed specifically for iOS and macOS.
+				</p>
+				<div class="cta-buttons">
+					<a href="https://apps.apple.com/app/id6746681102" class="btn-primary" target="_blank" rel="noopener">Get Notified on App Store</a>
+					<a href="/contact" class="btn-secondary">Contact Us</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		padding: 2rem 1rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.about-hero {
+		text-align: center;
+		padding: 3rem 0;
+		margin-bottom: 4rem;
+	}
+
+	.about-hero h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		color: var(--black);
+	}
+
+	.hero-subtitle {
+		font-size: 1.3rem;
+		color: #666;
+		font-weight: 500;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.mission-section {
+		margin-bottom: 5rem;
+	}
+
+	.content-wrapper {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 3rem;
+		align-items: center;
+	}
+
+	.mission-content h2 {
+		font-size: 2.2rem;
+		margin-bottom: 2rem;
+		color: var(--accent);
+	}
+
+	.mission-content p {
+		font-size: 1.1rem;
+		line-height: 1.7;
+		color: #555;
+		margin-bottom: 1.5rem;
+	}
+
+	.mission-visual {
+		text-align: center;
+	}
+
+	.visual-element {
+		font-size: 8rem;
+		opacity: 0.8;
+	}
+
+	.story-section {
+		margin-bottom: 5rem;
+	}
+
+	.story-section h2 {
+		text-align: center;
+		font-size: 2.2rem;
+		margin-bottom: 3rem;
+		color: var(--black);
+	}
+
+	.story-timeline {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.timeline-item {
+		display: flex;
+		align-items: flex-start;
+		gap: 2rem;
+		margin-bottom: 3rem;
+		padding: 2rem;
+		background: white;
+		border-radius: 12px;
+		box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+	}
+
+	.timeline-icon {
+		font-size: 3rem;
+		min-width: 80px;
+		text-align: center;
+	}
+
+	.timeline-content h3 {
+		font-size: 1.4rem;
+		margin-bottom: 1rem;
+		color: var(--accent);
+	}
+
+	.timeline-content p {
+		line-height: 1.6;
+		color: #666;
+	}
+
+	.values-section {
+		margin-bottom: 5rem;
+	}
+
+	.values-section h2 {
+		text-align: center;
+		font-size: 2.2rem;
+		margin-bottom: 3rem;
+		color: var(--black);
+	}
+
+	.values-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.value-item {
+		text-align: center;
+		padding: 2rem;
+		background: #f9f9f9;
+		border-radius: 12px;
+		transition: transform 0.3s ease;
+	}
+
+	.value-item:hover {
+		transform: translateY(-5px);
+	}
+
+	.value-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.value-item h3 {
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+		color: var(--accent);
+	}
+
+	.value-item p {
+		line-height: 1.6;
+		color: #666;
+	}
+
+	.team-section {
+		margin-bottom: 5rem;
+	}
+
+	.team-section h2 {
+		text-align: center;
+		font-size: 2.2rem;
+		margin-bottom: 2rem;
+		color: var(--black);
+	}
+
+	.approach-content {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.approach-content p {
+		font-size: 1.1rem;
+		line-height: 1.7;
+		color: #555;
+		margin-bottom: 1.5rem;
+	}
+
+	.platform-section {
+		margin-bottom: 5rem;
+	}
+
+	.platform-section h2 {
+		text-align: center;
+		font-size: 2.2rem;
+		margin-bottom: 2rem;
+	}
+
+	.platform-content p {
+		text-align: center;
+		font-size: 1.1rem;
+		max-width: 800px;
+		margin: 0 auto 3rem;
+		line-height: 1.6;
+		color: #666;
+	}
+
+	.platform-features {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+	}
+
+	.platform-feature {
+		text-align: center;
+		padding: 2rem;
+		background: var(--gradient-card);
+		backdrop-filter: blur(10px);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: var(--radius-xl);
+		box-shadow: var(--shadow-lg);
+	}
+
+	.platform-feature .feature-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		display: block;
+	}
+
+	.platform-feature h3 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+		font-size: 1.3rem;
+	}
+
+	.platform-feature p {
+		color: var(--gray-600);
+		line-height: 1.5;
+		margin: 0;
+		text-align: center;
+	}
+
+	.cta-section {
+		text-align: center;
+		padding: 3rem 2rem;
+		background: #f9f9f9;
+		border-radius: 12px;
+	}
+
+	.cta-section h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		color: var(--black);
+	}
+
+	.cta-section p {
+		font-size: 1.1rem;
+		line-height: 1.6;
+		color: #666;
+		margin-bottom: 2rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn-primary, .btn-secondary {
+		padding: 1rem 2rem;
+		text-decoration: none;
+		border-radius: 6px;
+		font-weight: 600;
+		transition: all 0.3s ease;
+	}
+
+	.btn-primary {
+		background: var(--accent);
+		color: white;
+	}
+
+	.btn-primary:hover {
+		background: var(--accent-dark, #0056b3);
+		transform: translateY(-2px);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: var(--accent);
+		border: 2px solid var(--accent);
+	}
+
+	.btn-secondary:hover {
+		background: var(--accent);
+		color: white;
+		transform: translateY(-2px);
+	}
+
+	@media (max-width: 768px) {
+		.about-hero h1 {
+			font-size: 2.5rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.1rem;
+		}
+
+		.content-wrapper {
+			grid-template-columns: 1fr;
+			text-align: center;
+		}
+
+		.visual-element {
+			font-size: 4rem;
+		}
+
+		.timeline-item {
+			flex-direction: column;
+			text-align: center;
+			gap: 1rem;
+		}
+
+		.timeline-icon {
+			min-width: auto;
+		}
+
+		.values-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.platform-features {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-buttons {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.btn-primary, .btn-secondary {
+			width: 100%;
+			max-width: 300px;
+		}
+	}
+</style>
