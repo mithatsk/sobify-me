@@ -1,0 +1,716 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, APP_NAME } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Features - ${SITE_TITLE}`} description={`Discover all the powerful features that make ${APP_NAME} the perfect companion for your sobriety journey.`} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="features-hero">
+				<div class="hero-content">
+					<div class="hero-badge">🚀 Comprehensive Recovery Tools</div>
+					<h1>Powerful Features for Your Sobriety Journey</h1>
+					<p>Discover how {APP_NAME} supports every step of your recovery with comprehensive tracking, community support, and practical tools designed specifically for your needs.</p>
+				</div>
+			</section>
+
+			<!-- TODO: Bring this back when app is live
+
+			<section class="features-overview">
+				<div class="overview-grid">
+					<div class="overview-item">
+						<div class="overview-number">24/7</div>
+						<div class="overview-label">Support Access</div>
+					</div>
+					<div class="overview-item">
+						<div class="overview-number">100%</div>
+						<div class="overview-label">Privacy Protected</div>
+					</div>
+					<div class="overview-item">
+						<div class="overview-number">50K+</div>
+						<div class="overview-label">Users Supported</div>
+					</div>
+				</div>
+			</section>
+
+			-->
+
+			<section class="features-detailed">
+				<div class="feature-item card">
+					<div class="feature-visual">
+						<div class="feature-icon">📅</div>
+						<div class="visual-elements">
+							<div class="progress-ring">
+								<div class="progress-fill"></div>
+							</div>
+						</div>
+					</div>
+					<div class="feature-content">
+						<h2>Smart Sobriety Tracking</h2>
+						<p>Keep track of your sober days with precision and celebrate every milestone along the way. Our intelligent tracking system adapts to your journey.</p>
+						<div class="feature-list">
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Real-time day counter with precise timing</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Milestone celebrations and achievements</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Visual progress charts and statistics</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Personal notes and reflection logging</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Streak recovery and motivation tools</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="feature-item card reverse">
+					<div class="feature-visual">
+						<div class="feature-icon">🤝</div>
+						<div class="visual-elements">
+							<div class="community-avatars">
+								<div class="avatar">S</div>
+								<div class="avatar">M</div>
+								<div class="avatar">E</div>
+								<div class="avatar-count">+50K</div>
+							</div>
+						</div>
+					</div>
+					<div class="feature-content">
+						<h2>Supportive Community</h2>
+						<p>Connect with others who understand your journey and build meaningful relationships in recovery. Our community is moderated and safe.</p>
+						<div class="feature-list">
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Anonymous support groups and forums</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Peer mentorship and buddy system</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Share victories and challenges safely</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Local meetup and event discovery</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>24/7 community support availability</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="feature-item card">
+					<div class="feature-visual">
+						<div class="feature-icon">🎯</div>
+						<div class="visual-elements">
+							<div class="goals-chart">
+								<div class="goal-bar" style="--progress: 80%"></div>
+								<div class="goal-bar" style="--progress: 65%"></div>
+								<div class="goal-bar" style="--progress: 90%"></div>
+							</div>
+						</div>
+					</div>
+					<div class="feature-content">
+						<h2>Goal Setting & Habit Building</h2>
+						<p>Create meaningful goals and build healthy habits that support your long-term recovery. Track progress and celebrate achievements.</p>
+						<div class="feature-list">
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Customizable short and long-term goals</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Daily habit tracking and reminders</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Progress visualization and insights</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Reward system for completed goals</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Habit streak tracking and motivation</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="feature-item card reverse">
+					<div class="feature-visual">
+						<div class="feature-icon">🛠️</div>
+						<div class="visual-elements">
+							<div class="tools-grid">
+								<div class="tool-item">🧘</div>
+								<div class="tool-item">📖</div>
+								<div class="tool-item">🆘</div>
+								<div class="tool-item">💡</div>
+							</div>
+						</div>
+					</div>
+					<div class="feature-content">
+						<h2>Recovery Tools & Resources</h2>
+						<p>Access a comprehensive toolkit designed to help you through challenging moments and maintain your sobriety with practical strategies.</p>
+						<div class="feature-list">
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Guided meditation and mindfulness exercises</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Breathing exercises and relaxation techniques</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Coping strategy library and quick access</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Emergency contact and crisis support</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Educational resources and articles</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="feature-item card">
+					<div class="feature-visual">
+						<div class="feature-icon">📊</div>
+						<div class="visual-elements">
+							<div class="analytics-chart">
+								<div class="chart-bar" style="--height: 70%"></div>
+								<div class="chart-bar" style="--height: 85%"></div>
+								<div class="chart-bar" style="--height: 60%"></div>
+								<div class="chart-bar" style="--height: 95%"></div>
+							</div>
+						</div>
+					</div>
+					<div class="feature-content">
+						<h2>Progress Analytics</h2>
+						<p>Gain insights into your recovery journey with detailed analytics and progress tracking. Understand patterns and celebrate growth.</p>
+						<div class="feature-list">
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Detailed progress reports and summaries</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Mood and energy level tracking</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Trigger identification and patterns</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Success factor analysis</span>
+							</div>
+							<div class="list-item">
+								<span class="check-icon">✓</span>
+								<span>Shareable progress reports</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<section class="feature-cta">
+				<div class="cta-content">
+					<h2>Ready to Transform Your Recovery Journey?</h2>
+					<p>Join thousands of people who are using {APP_NAME} to build stronger, healthier lives in sobriety. Start your journey today with all these powerful features.</p>
+					<a href="https://apps.apple.com/app/id6746681102" class="btn btn-primary large" target="_blank" rel="noopener">
+						Download {APP_NAME} Today
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+						</svg>
+					</a>
+					<div class="cta-note">
+						<span>No ads • Privacy protected</span>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	/* Features Hero */
+	.features-hero {
+		text-align: center;
+		padding: var(--space-3xl) 0;
+		margin-bottom: var(--space-3xl);
+		position: relative;
+	}
+
+	.features-hero::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+		z-index: -1;
+	}
+
+	.hero-badge {
+		display: inline-block;
+		padding: var(--space-sm) var(--space-lg);
+		background: var(--gradient-card);
+		backdrop-filter: blur(10px);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: var(--radius-full);
+		font-size: 0.875rem;
+		font-weight: 600;
+		color: var(--primary);
+		margin-bottom: var(--space-xl);
+		box-shadow: var(--shadow-md);
+	}
+
+	.features-hero h1 {
+		margin-bottom: var(--space-lg);
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.features-hero p {
+		font-size: 1.25rem;
+		color: var(--gray-600);
+		max-width: 700px;
+		margin: 0 auto;
+		line-height: 1.6;
+	}
+
+	/* Features Overview */
+	.features-overview {
+		margin-bottom: var(--space-3xl);
+		padding: var(--space-3xl) var(--space-xl);
+		background: var(--gradient-primary);
+		border-radius: var(--radius-2xl);
+		color: var(--white);
+	}
+
+	.overview-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: var(--space-xl);
+		text-align: center;
+	}
+
+	.overview-item {
+		position: relative;
+	}
+
+	.overview-number {
+		font-size: clamp(2rem, 4vw, 3rem);
+		font-weight: 800;
+		line-height: 1;
+		margin-bottom: var(--space-sm);
+		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	}
+
+	.overview-label {
+		font-size: 1rem;
+		opacity: 0.9;
+		font-weight: 500;
+	}
+
+	/* Feature Items */
+	.features-detailed {
+		margin-bottom: var(--space-3xl);
+	}
+
+	.feature-item {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		gap: var(--space-3xl);
+		align-items: center;
+		margin-bottom: var(--space-3xl);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.feature-item.reverse {
+		grid-template-columns: 2fr 1fr;
+	}
+
+	.feature-item.reverse .feature-visual {
+		order: 2;
+	}
+
+	.feature-item.reverse .feature-content {
+		order: 1;
+	}
+
+	.feature-visual {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		position: relative;
+	}
+
+	.feature-icon {
+		font-size: 4rem;
+		margin-bottom: var(--space-xl);
+		position: relative;
+		z-index: 2;
+	}
+
+	.visual-elements {
+		position: relative;
+	}
+
+	/* Visual Elements */
+	.progress-ring {
+		width: 120px;
+		height: 120px;
+		border: 8px solid var(--gray-200);
+		border-radius: 50%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.progress-fill {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: conic-gradient(var(--primary) 75%, transparent 75%);
+		border-radius: 50%;
+	}
+
+	@keyframes rotate {
+		from { transform: rotate(0deg); }
+		to { transform: rotate(270deg); }
+	}
+
+	.community-avatars {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: var(--space-sm);
+	}
+
+	.avatar {
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background: var(--gradient-secondary);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--white);
+		font-weight: 700;
+		border: 3px solid var(--white);
+		box-shadow: var(--shadow-md);
+	}
+
+	.avatar-count {
+		background: var(--gray-600);
+		color: var(--white);
+		padding: var(--space-sm) var(--space-md);
+		border-radius: var(--radius-full);
+		font-size: 0.875rem;
+		font-weight: 600;
+		margin-left: var(--space-sm);
+	}
+
+	.goals-chart {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-sm);
+		width: 120px;
+	}
+
+	.goal-bar {
+		height: 12px;
+		background: var(--gray-200);
+		border-radius: var(--radius-full);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.goal-bar::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: var(--progress, 0%);
+		background: var(--gradient-secondary);
+		border-radius: var(--radius-full);
+		animation: progress 1.5s ease-out;
+	}
+
+	@keyframes progress {
+		from { width: 0%; }
+		to { width: var(--progress, 0%); }
+	}
+
+	.tools-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--space-md);
+		width: 120px;
+	}
+
+	.tool-item {
+		width: 48px;
+		height: 48px;
+		background: var(--gradient-card);
+		border-radius: var(--radius-lg);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		box-shadow: var(--shadow-md);
+		animation: float 3s ease-in-out infinite;
+		animation-delay: calc(var(--i, 0) * 0.2s);
+	}
+
+	.analytics-chart {
+		display: flex;
+		align-items: end;
+		gap: var(--space-sm);
+		height: 80px;
+		padding: var(--space-md);
+		background: var(--gray-100);
+		border-radius: var(--radius-lg);
+	}
+
+	.chart-bar {
+		width: 16px;
+		height: var(--height, 50%);
+		background: var(--gradient-primary);
+		border-radius: var(--radius-sm);
+		animation: chartGrow 1.5s ease-out;
+	}
+
+	@keyframes chartGrow {
+		from { height: 0%; }
+		to { height: var(--height, 50%); }
+	}
+
+	.security-shield {
+		position: relative;
+		width: 120px;
+		height: 120px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.shield-icon {
+		font-size: 2rem;
+		position: relative;
+		z-index: 2;
+	}
+
+	.security-rings {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.ring {
+		position: absolute;
+		border: 2px solid var(--primary);
+		border-radius: 50%;
+		opacity: 0.3;
+		animation: pulse 2s ease-in-out infinite;
+	}
+
+	.ring-1 {
+		width: 40%;
+		height: 40%;
+		top: 30%;
+		left: 30%;
+	}
+
+	.ring-2 {
+		width: 70%;
+		height: 70%;
+		top: 15%;
+		left: 15%;
+		animation-delay: 0.5s;
+	}
+
+	.ring-3 {
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		animation-delay: 1s;
+	}
+
+	@keyframes pulse {
+		0%, 100% { opacity: 0.3; transform: scale(1); }
+		50% { opacity: 0.6; transform: scale(1.05); }
+	}
+
+	/* Feature Content */
+	.feature-content h2 {
+		font-size: 2rem;
+		margin-bottom: var(--space-lg);
+		color: var(--gray-900);
+	}
+
+	.feature-content p {
+		font-size: 1.125rem;
+		line-height: 1.6;
+		color: var(--gray-600);
+		margin-bottom: var(--space-xl);
+	}
+
+	.feature-list {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-md);
+	}
+
+	.list-item {
+		display: flex;
+		align-items: flex-start;
+		gap: var(--space-md);
+		line-height: 1.5;
+		color: var(--gray-700);
+	}
+
+	.check-icon {
+		color: var(--accent);
+		font-weight: bold;
+		font-size: 1.125rem;
+		flex-shrink: 0;
+		margin-top: 2px;
+	}
+
+	/* Feature CTA */
+	.feature-cta {
+		text-align: center;
+		padding: var(--space-3xl);
+		background: var(--gradient-card);
+		backdrop-filter: blur(10px);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: var(--radius-2xl);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.feature-cta::before {
+		content: '';
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 200%;
+		height: 200%;
+		background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+		animation: float 8s ease-in-out infinite;
+		z-index: -1;
+	}
+
+	.cta-content h2 {
+		margin-bottom: var(--space-lg);
+		font-size: 2.5rem;
+	}
+
+	.cta-content p {
+		font-size: 1.25rem;
+		color: var(--gray-600);
+		margin-bottom: var(--space-2xl);
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		line-height: 1.6;
+	}
+
+	.btn.large {
+		padding: var(--space-lg) var(--space-2xl);
+		font-size: 1.25rem;
+		gap: var(--space-sm);
+		margin-bottom: var(--space-lg);
+	}
+
+	.cta-note {
+		font-size: 0.875rem;
+		color: var(--gray-500);
+		font-weight: 500;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.features-hero h1 {
+			font-size: 2rem;
+		}
+
+		.features-hero p {
+			font-size: 1.125rem;
+		}
+
+		.overview-grid {
+			grid-template-columns: repeat(2, 1fr);
+			gap: var(--space-lg);
+		}
+
+		.feature-item {
+			grid-template-columns: 1fr;
+			text-align: center;
+			gap: var(--space-xl);
+		}
+
+		.feature-item.reverse .feature-visual {
+			order: 1;
+		}
+
+		.feature-item.reverse .feature-content {
+			order: 2;
+		}
+
+		.feature-content h2 {
+			font-size: 1.5rem;
+		}
+
+		.cta-content h2 {
+			font-size: 2rem;
+		}
+
+		.cta-content p {
+			font-size: 1.125rem;
+		}
+
+		.feature-cta {
+			padding: var(--space-xl);
+		}
+	}
+</style> 
